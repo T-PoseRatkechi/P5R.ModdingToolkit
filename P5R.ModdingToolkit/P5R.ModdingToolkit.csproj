@@ -37,18 +37,29 @@
     <Content Include="ModConfig.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Update="P5REssentials\CPK\BASE.CPK\BATTLE\EVENT\SCRIPT\0000.bf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="P5REssentials\CPK\BASE.CPK\BATTLE\EVENT\SCRIPT\0000.flow">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Update="Preview.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Reloaded.Memory.SigScan.ReloadedII.Interfaces" Version="1.2.0" />
     <PackageReference Include="Reloaded.Mod.Interfaces" Version="2.4.0" ExcludeAssets="runtime" />
     <PackageReference Include="Reloaded.SharedLib.Hooks" Version="1.9.0" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\submodules\Project.Utils\Project.Utils.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="P5REssentials\CPK\BASE.CPK\BATTLE\EVENT\SCRIPT\" />
   </ItemGroup>
 
 </Project>
