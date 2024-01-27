@@ -1,0 +1,39 @@
+void BTL_ENCOUNT()
+{
+}
+
+void BTL_BTLSTART()
+{
+}
+
+void BTL_AISTART()
+{
+}
+
+void BTL_ACTSTART()
+{
+}
+
+void BTL_ACTEND()
+{
+}
+
+void BTL_BTLEND()
+{
+}
+
+void BTL_TALK()
+{
+}
+
+void BTL_TALK02()
+{
+}
+
+void BTL_EVENT0()
+{
+}
+
+void BTL_EVENT1()
+{
+}
