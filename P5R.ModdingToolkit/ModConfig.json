@@ -1,0 +1,21 @@
+{
+  "ModId": "P5R.ModdingToolkit",
+  "ModName": "P5R Modding Toolkit",
+  "ModAuthor": "zutomayofan50",
+  "ModVersion": "1.0.0",
+  "ModDescription": "",
+  "ModDll": "P5R.ModdingToolkit.dll",
+  "ModIcon": "Preview.png",
+  "ModR2RManagedDll32": "x86/P5R.ModdingToolkit.dll",
+  "ModR2RManagedDll64": "x64/P5R.ModdingToolkit.dll",
+  "ModNativeDll32": "",
+  "ModNativeDll64": "",
+  "IsLibrary": false,
+  "ReleaseMetadataFileName": "P5R.ModdingToolkit.ReleaseMetadata.json",
+  "PluginData": {},
+  "IsUniversalMod": false,
+  "ModDependencies": [ "reloaded.sharedlib.hooks" ],
+  "OptionalDependencies": [],
+  "SupportedAppId": [],
+  "ProjectUrl": ""
+}
