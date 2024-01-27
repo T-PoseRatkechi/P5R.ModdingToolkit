@@ -5,6 +5,8 @@ VisualStudioVersion = 17.7.34202.233
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P5R.ModdingToolkit", "P5R.ModdingToolkit\P5R.ModdingToolkit.csproj", "{E299C7DA-4D1E-4A4D-9E49-882A58FCBABD}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Project.Utils", "submodules\Project.Utils\Project.Utils.csproj", "{415630C8-BCEF-4736-B3E6-27CD27EF78BC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{E299C7DA-4D1E-4A4D-9E49-882A58FCBABD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E299C7DA-4D1E-4A4D-9E49-882A58FCBABD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E299C7DA-4D1E-4A4D-9E49-882A58FCBABD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{415630C8-BCEF-4736-B3E6-27CD27EF78BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{415630C8-BCEF-4736-B3E6-27CD27EF78BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{415630C8-BCEF-4736-B3E6-27CD27EF78BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{415630C8-BCEF-4736-B3E6-27CD27EF78BC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
