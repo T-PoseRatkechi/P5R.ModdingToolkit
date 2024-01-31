@@ -37,10 +37,13 @@
     <Content Include="ModConfig.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <None Update="P5REssentials\CPK\BASE.CPK\BATTLE\EVENT\SCRIPT\0000.bf">
+    <None Update="Resources\Battles\CommonBattle.flow">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="P5REssentials\CPK\BASE.CPK\BATTLE\EVENT\SCRIPT\0000.flow">
+    <None Update="Resources\Battles\EventBattle.bf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Battles\EventBattle.flow">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Update="Preview.png">
@@ -55,11 +58,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\submodules\CriFs.V2.Hook.ReloadedII\Interfaces\CriFs.V2.Hook.Interfaces\CriFs.V2.Hook.Interfaces.csproj" />
+    <ProjectReference Include="..\submodules\FileEmulationFramework\Emulator\Interfaces\BF.File.Emulator.Interfaces\BF.File.Emulator.Interfaces.csproj" />
     <ProjectReference Include="..\submodules\Project.Utils\Project.Utils.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="P5REssentials\CPK\BASE.CPK\BATTLE\EVENT\SCRIPT\" />
   </ItemGroup>
 
 </Project>
