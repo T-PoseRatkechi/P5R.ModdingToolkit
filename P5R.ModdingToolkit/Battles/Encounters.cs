@@ -25,12 +25,16 @@ internal unsafe class Encounters : IGameHook
     private IReverseWrapper<IsEventBattle>? eventBattleChecksWrapper;
     private IAsmHook? eventBattleChecksHook;
 
+    private readonly IReadOnlyCollection<CustomEventBattle> customBattles;
     private readonly bool* isCommonBattle = (bool*)Marshal.AllocHGlobal(sizeof(bool));
+
+    private int currentEncounterId;
 
     public Action<int>? EncounterLoading;
 
-    public Encounters()
+    public Encounters(IReadOnlyCollection<CustomEventBattle> customBattles)
     {
+        this.customBattles = customBattles;
         *this.isCommonBattle = false;
     }
 
@@ -95,6 +99,13 @@ internal unsafe class Encounters : IGameHook
         {
             *this.isCommonBattle = false;
             Log.Information($"Event Battle Condition 2: true");
+            return true;
+        }
+
+        if (this.customBattles.Any(x => x.EncounterId == this.currentEncounterId && x.EncounterId != 0))
+        {
+            *this.isCommonBattle = false;
+            Log.Information($"Loading custom event battle: {this.currentEncounterId}");
             return true;
         }
 
